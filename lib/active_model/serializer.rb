@@ -455,7 +455,7 @@ module ActiveModel
     def attributes
       _fast_attributes
       rescue NameError
-        method = "def _fast_attributes\n"
+        method = +"def _fast_attributes\n"
 
         method << "  h = {}\n"
 
